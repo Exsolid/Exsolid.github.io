@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #B3B3B3;
+    font-family: monospace;
+}
+/** Header stuff **/
+.title{
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 25px;
+    background-image: url(Pictures/TitleBackground.JPG);
+    background-size:cover
+}
+/** Title **/
+.title-desc{
+    display: grid;
+    align-content: center;
+    margin-left: auto;
+    text-transform: uppercase;
+    color: #B3B3B3;
+}
+/** Navigation **/
+.nav-link a{
+    display: flex;
+    margin-top: 15px;
+    color: #B3B3B3;
+    
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    border-spacing: 20px;
+    padding-left: 10px; 
+        
+    transition: border-left 0.5s;
+}
+.nav-link a:hover{
+    border-left-color: #B3B3B3;
+    border-left-width:thick;
+    transition: border 0.5s;
+    
+}/** Content **/
+.content-title{
+    display: grid;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.content-description{
+    display: grid;
+    justify-content: center;
+    font-size: 1.25em;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.content-description > p > a:visited{
+    color: #9E3434;
+}
+.content-description > p > a{
+    color: #DA4242;
+}
+/**Other**/
+.list > ul{
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
