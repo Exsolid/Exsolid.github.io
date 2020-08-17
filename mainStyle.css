@@ -49,8 +49,8 @@ body > .content-wrapper{
     background-color: gray;
     margin-left: 80px;
     margin-right: 80px;
-    height: 100vh;
-    min-height: 100vh;
+    height: 150vh;
+    min-height: 150vh;
     align-self: center;
 }
 .content-title{
