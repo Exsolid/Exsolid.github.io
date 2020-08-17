@@ -3,6 +3,7 @@ body{
     padding: 0;
     background-color: #B3B3B3;
     font-family: monospace;
+    min-width: 550px;
 }
 /** Header stuff **/
 .title{
@@ -40,12 +41,17 @@ body{
     transition: border 0.5s;
     
 }/** Content **/
+body > .content-wrapper{
+    display: flex;
+    justify-content: center;
+}
 .content{
     background-color: gray;
     margin-left: 80px;
     margin-right: 80px;
     height: 100vh;
     min-height: 100vh;
+    align-self: center;
 }
 .content-title{
     display: grid;
