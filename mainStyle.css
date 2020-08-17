@@ -40,6 +40,13 @@ body{
     transition: border 0.5s;
     
 }/** Content **/
+.content{
+    background-color: gray;
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 100vh;
+    min-height: 100vh;
+}
 .content-title{
     display: grid;
     justify-content: center;
@@ -48,6 +55,7 @@ body{
     
     font-size: 1.5em;
     font-weight: bold;
+    white-space: nowrap;
 }
 .content-description{
     display: grid;
