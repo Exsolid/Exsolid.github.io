@@ -11,7 +11,7 @@ body{
     font-size: 2em;
     font-weight: bold;
     padding: 25px;
-    background-image: url(Pictures/TitleBackground.JPG);
+    background-image: url(assets/TitleBackground.JPG);
     background-size:cover
 }
 /** Title **/
