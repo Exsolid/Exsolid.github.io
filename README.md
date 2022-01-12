@@ -1,4 +1,3 @@
-# exsolid.github.io
 This repository acts for my portfolio website, where I manage my blogs and information.
 
 As no liscense is present "the default copyright laws apply, meaning that [I] retain all rights to [my] source code and no one may reproduce,
