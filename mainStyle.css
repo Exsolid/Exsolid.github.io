@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #B3B3B3;
+    background-color: #080c1f;
     font-family: monospace;
     min-width: 700px;
 }
@@ -20,13 +20,13 @@ body{
     align-content: center;
     margin-left: auto;
     text-transform: uppercase;
-    color: #B3B3B3;
+    color: white;
 }
 /** Navigation **/
 .nav-link a{
     display: flex;
     margin-top: 15px;
-    color: #B3B3B3;
+    color: white;
     
     text-decoration: none;
     border-left: 2px solid transparent;
@@ -36,19 +36,19 @@ body{
     transition: border-left 0.5s;
 }
 .nav-link a:hover{
-    border-left-color: #B3B3B3;
+    border-left-color: white;
     border-left-width:thick;
     transition: border 0.5s;
     
 }/** Content **/
 fieldset{
     outline-style: outset;
-    margin-left: 80px;
-    margin-right: 80px;
-    height: 100vh;
+    margin-top: 5px;
+    margin-left: 150px;
+    margin-right: 150px;
     min-height: 100vh;
     height: 100%;
-    background-color: gray;
+    background-color: white;
 }
 .content-title{
     display:flex;
@@ -68,6 +68,20 @@ fieldset{
     padding-left: 100px;
     padding-right: 100px;
 }
+
+.content-description-image-to-text-aligned{
+    justify-content: center;
+    font-size: 1.25em;
+    padding-left: 100px;
+    padding-right: 100px;
+    min-width: 800px;
+}
+
+.content-image-border{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
 .content-description > p > a:visited{
     color: #9E3434;
 }
