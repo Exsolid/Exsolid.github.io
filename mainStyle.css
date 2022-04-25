@@ -80,13 +80,20 @@ fieldset{
 .content-description{
     font-family: serif;
     display:grid;
+    
+    font-size: 1.25em;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.content-description-lists{
+    font-family: serif;
+    display:flex;
     justify-content: center;
     
     font-size: 1.25em;
     padding-left: 100px;
     padding-right: 100px;
 }
-
 .content-introduction-picture{
     font-family: serif;
     font-size: 1.25em;
@@ -116,10 +123,10 @@ fieldset{
 }
 
 .content-description > p > a:visited{
-    color: #9E3434;
+    color: #0f3758;
 }
 .content-description > p > a{
-    color: #DA4242;
+    color: #1b619c;
 }
 /**Other**/
 .list > ul{
