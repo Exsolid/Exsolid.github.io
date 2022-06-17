@@ -12,60 +12,87 @@
         <link rel="stylesheet" href="mainStyle.css">
     </head>
     <body>
-        <div class="title">
-            <div class="nav">
-                <div class="nav-link"><a href="index.html">Home</a> </div>
-                <div class="nav-link"><a href="projects.html">Recent Projects</a> </div>
-                <div class="nav-link"><a href="about.html">About</a> </div>
+        <div class="all">
+            <div class="title-banner">
             </div>
-            <div class="title-desc">
-                <div>Some recent projects</div>
+            <div class="title">
+                <fieldset>                    
+                    <div class="nav">
+                        <div class="nav-link"><a href="index.html">Home</a></div>
+                        <div class="nav-link"><a href="projects.html">Recent Projects</a> </div>
+                        <div class="nav-link"><a href="about.html">About</a> </div>
+                    </div>
+                    <img src="assets/Profil.png" width="200" height="200"class="content-introduction-picture">
+
+                   <div class="title-desc">Projects</div>
+                </fieldset>
+            </div>
+
+            <div class= "wrapper">
+                <fieldset>
+                    <div class="content">
+                        <div class="content-description-image-to-text-aligned">
+                            <h1 style = "text-align: left;">Input System</h1>
+                            <hr style="width: 235px; margin-left: 0; margin-top: -20px">
+                            <img src="assets/Coding-Start.png" width="464" height="auto" style="float: right; margin-bottom: 15px; margin-right: 15px; margin-left: 15px; border-radius: 15px;">
+                            <img src="assets/Coding-Reset.png" width="464" height="auto" style="float: right; margin-bottom: 15px; margin-right: 15px; margin-left: 15px; border-radius: 15px;">
+                            <img src="assets/Coding-SetKey.png" width="464" height="auto" style="float: right; margin-bottom: 15px; margin-right: 15px; margin-left: 15px; border-radius: 15px;">
+                            <p>As a part of my <a href="https://github.com/Exsolid/UnityToolbox/">Unity-Toolbox</a> that I am working on, I have implemented the customization for keyboard controls. It can be used dynamically for different projects.<p>
+                            <p>You can view the whole file <a href="https://github.com/Exsolid/UnityToolbox/blob/main/UI/Controls/ControlManager.cs">here</a>.<p>
+                            <p>At the start, two dictionaries are defined. One keeping track of the changes and one to read data on reset.</p>
+                            <p>
+                            Resetting and setting keybindings requires the 
+                            <span style = "color: #9E3434">path</span>, such as 
+                            <span style = "color: #9E3434">"&ltKeyboard&gt/escape"</span> and the name of the 
+                            <span style = "color: #9E3434">action</span> and 
+                            <span style = "color: #9E3434">control</span>. The action name is user defined, where as the control name specifies what is supposed to bound. While movement can be stored as a 2D Vector , with <span style = "color: #9E3434">"Movement"</span> as the action name and 
+                            <span style = "color: #9E3434">"Up", "Down", "Left", "Right"</span> as the control names, a single key does not have a defined control name.</p>
+                            <p>In the end, the set dictionary will be used to persist the data as a JSON formatted string.</p>
+                        </div>
+                        <div class="content-description-image-to-text-aligned">
+                            <h1 style = "text-align: left;">(Virtual) Reality</h1>
+                            <hr style="width: 300px; margin-left: 0; margin-top: -20px">
+                            <img src="assets/Gameplay (Virtual) Reality.png" width="464" height="261" style="float: right; margin-bottom: 15px; margin-right: 15px; margin-left: 15px; border-radius: 15px;">
+                            <p>
+                            The second game project I did with eight others out of my current university. The goal was to create a prototype of a game, given a set of themes.
+                                It is a <span style = "color: #9E3434">murder mystery/horror game with puzzle elements</span> in which the player is caught between two realities. The 'real' world set in the players room and the ingame world in which a crime has to be solved. The ingame world is accessible via a futuristic VR headset in its beta phase and therefore bringing unforeseen consequences.
+                            The gameplay is <span style = "color: #9E3434">dialog heavy</span>, requiring you to talk to the npcs and searching for clues.
+                            </p>
+                            <p>I have been the sole programmer, while also being <span style = "color: #9E3434">relevant for sound and general design</span>. A few of my tasks have been: </p>                        
+                            <div class="list">
+                                <ul>
+                                    <li>A multiway tree, designed for multiple dialog options and storytelling (later reimplemented with the <a href="https://github.com/alelievr/NodeGraphProcessor">NodeGraphProcessor</a> for my <a href="https://github.com/Exsolid/UnityToolbox/">Unity-Toolbox</a>)</li>
+                                    <li>A blur and glitch shader written with Shaderlab and HLSL</li>
+                                    <li>Interaction with different object types</li>
+                                    <li>Using preferences for dynamic controls and volume settings</li>
+                                    <li>Learning music theory and writing lofi beats</li>
+                                </ul>
+                            </div>
+                            <video preload="metadata" width="464" height="261" controls style="float: left; margin-bottom: 15px; margin-right: 25px; margin-top: 25px;border-radius: 15px;">
+                            <source src="assets/GlitchShader-Showcase.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video> 
+                            <p><br>To the left is a <span style = "color: #9E3434">showcase of the glitch shader</span> used in the project. The shader itself is higly customizable, which is why the video shows four different settings, going from low to high. The     setup has been created as another submission for my university.</p>
+                            <p><span style = "color: #9E3434"><b>The video contains flashing lights that may trigger epilepsy.</b></span></p>
+
+                        </div>
+                        <div class="content-description-image-to-text-aligned">
+                            <h1 style = "text-align: right;">Aviation: Fly Through Time</h1>
+                            <hr style="width: 465px; margin-right: 0; margin-top: -20px">
+                            <video preload="metadata" width="464" height="261" controls style="float: right; margin-bottom: 15px; margin-left: 25px; border-radius: 15px;">
+                            <source src="assets/Aviation-Gameplay.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video> 
+                            <p>This is the first prototype of a game we, as a group of nine, had to complete. It had to have a grounded design in context of aerospace. Our idea was to create <span style = "color: #9E3434">top down arcade style levels</span> for a selection of flying vehicles. A <span style = "color: #9E3434">preview of the Spitfire level</span> can be seen on the left. As this was the first project, a lot of time has been used to get to know Unity and its possibilities. The <span style = "color: #9E3434">new Input System</span> for expample had been a challenge to use as it still was incomplete as of that time, requiring workarounds, but resulting in dynamic control settings, which have been used and improved for (Virtual) Reality too and showen above. Another challenge has been the <span style = "color: #9E3434">non intellegent AI</span> for the enemies. Although it did not end up perfectly, it had been adequate for our first project.</p> 
+                        </div>
+                        <div class="content-description">
+                            <hr style="width: 100px; margin-top: 30px">
+                            <hr style="width: 300px">
+                            <hr style="width: 100px">
+                        </div>
+                    </div>
+                </fieldset>
             </div>
         </div>
-        <fieldset>
-            <div class="content">
-                <div class="content-description-image-to-text-aligned">
-                    <h1 style = "text-align: left;">(Virtual) Reality</h1>
-                    <hr style="width: 300px; margin-left: 0; margin-top: -20px">
-                    <img src="assets/Gameplay (Virtual) Reality.png" width="464" height="261" style="float: right; margin-bottom: 15px; margin-right: 15px; margin-left: 15px; border-radius: 15px;">
-                    <p>
-                    The second game project I did with eight others out of my current university. The goal was to create a prototype of a game, given a set of themes.
-                    It is a murder mystery/horror game with puzzle elements in which the player is caught between two realities. The 'real' world set in the players room and the ingame world in which a crime has to be solved. The ingame world is accessible via a futuristic VR headset in its beta phase and therefore bringing unforeseen consequences.
-                    The gameplay is dialog heavy, requiring you to talk to the npcs and searching for clues.
-                    </p>
-                    <p>I have been the sole programmer, while also being relevant for sound and general design. A few of my tasks have been: </p>                        
-                    <div class="list">
-                        <ul>
-                            <li>A multiway tree, designed for multiple dialog options and storytelling</li>
-                            <li>A blur and glitch shader written with Shaderlab and HLSL</li>
-                            <li>Interaction with different object types</li>
-                            <li>Using preferences for dynamic controls and volume settings</li>
-                            <li>Learning music theory and writing lofi beats</li>
-                        </ul>
-                    </div>
-                    <video preload="metadata" width="464" height="261" controls style="float: left; margin-bottom: 15px; margin-right: 25px; margin-top: 25px;border-radius: 15px;">
-                    <source src="assets/GlitchShader-Showcase.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video> 
-                    <p><br>To the left is a showcase of the glitch shader used in the project. The shader itself is higly customizable, which is why the video shows four different settings, going from low to high. The     setup has been created as another submission for my university.</p>
-                    <p><b>The video contains flashing lights that may trigger epilepsy.</b></p>
-
-                </div>
-                <div class="content-description-image-to-text-aligned">
-                    <h1 style = "text-align: right;">Aviation: Fly Through Time</h1>
-                    <hr style="width: 465px; margin-right: 0; margin-top: -20px">
-                    <video preload="metadata" width="464" height="261" controls style="float: right; margin-bottom: 15px; margin-left: 25px; border-radius: 15px;">
-                    <source src="assets/Aviation-Gameplay.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video> 
-                    <p>This is the first prototype of a game we, as a group of nine, had to complete. It had to have a grounded design in context of aerospace. Our idea was to create top down arcade style levels for a selection of flying vehicles. A preview of the Spitfire level can be seen on the left. As this was the first project, a lot of time has been used to get to know Unity and its possibilities. The new Input System for expample has been a challenge to use, requiring workarounds, but resulting in dynamic control settings, which have been used and improved for (Virtual) Reality too. Another challenge has been the non intellegent AI for the enemies. Although it did not end up perfectly, it had been adequate for our first project.</p> 
-                </div>
-                <div class="content-description">
-                    <hr style="width: 100px; margin-top: 30px">
-                    <hr style="width: 300px">
-                    <hr style="width: 100px">
-                </div>
-            </div>
-        </fieldset>
     </body>
 </html>
